@@ -1,0 +1,445 @@
+{
+    "title": "zones example",
+    "graphData": {
+        "nodes": [
+            {
+                "data": {
+                    "id": "zoneA",
+                    "zone": "#FBDCD6"
+                }
+            },
+            {
+                "data": {
+                    "id": "zoneB",
+                    "zone": "#E5F5E3"
+                }
+            },
+            {
+                "data": {
+                    "id": "zoneC",
+                    "zone": "#DBE6F2"
+                }
+            },
+            {
+                "data": {
+                    "id": "A",
+                    "fname": "A",
+                    "zone": "#fbb4ae",
+                    "parent": "zoneA",
+                    "info": "A node"
+                }
+            },
+            {
+                "data": {
+                    "id": "B",
+                    "fname": "B",
+                    "zone": "#b3cde3",
+                    "parent": "zoneC",
+                    "info": "B node"
+                }
+            },
+            {
+                "data": {
+                    "id": "C",
+                    "fname": "C",
+                    "zone": "#b3cde3",
+                    "parent": "zoneC",
+                    "info": "C node"
+                }
+            },
+            {
+                "data": {
+                    "id": "D",
+                    "fname": "D",
+                    "zone": "#ccebc5",
+                    "parent": "zoneB",
+                    "info": "D node"
+                }
+            },
+            {
+                "data": {
+                    "id": "E",
+                    "fname": "E",
+                    "zone": "#ccebc5",
+                    "parent": "zoneB",
+                    "info": "E node"
+                }
+            },
+            {
+                "data": {
+                    "id": "F",
+                    "fname": "F",
+                    "zone": "#b3cde3",
+                    "parent": "zoneC",
+                    "info": "F node"
+                }
+            },
+            {
+                "data": {
+                    "id": "G",
+                    "fname": "G",
+                    "zone": "#b3cde3",
+                    "parent": "zoneC",
+                    "info": "G node"
+                }
+            },
+            {
+                "data": {
+                    "id": "H",
+                    "fname": "H",
+                    "zone": "#b3cde3",
+                    "parent": "zoneC",
+                    "info": "H node"
+                }
+            },
+            {
+                "data": {
+                    "id": "I",
+                    "fname": "I",
+                    "zone": "#b3cde3",
+                    "parent": "zoneC",
+                    "info": "I node"
+                }
+            }
+        ],
+        "edges": [
+            {
+                "data": {
+                    "id": "arb2",
+                    "source": "B",
+                    "target": "D"
+                }
+            },
+            {
+                "data": {
+                    "id": "arb3",
+                    "source": "B",
+                    "target": "E"
+                }
+            },
+            {
+                "data": {
+                    "id": "arb4",
+                    "source": "B",
+                    "target": "C"
+                }
+            },
+            {
+                "data": {
+                    "id": "arb5",
+                    "source": "C",
+                    "target": "F"
+                }
+            },
+            {
+                "data": {
+                    "id": "arb6",
+                    "source": "A",
+                    "target": "B"
+                }
+            },
+            {
+                "data": {
+                    "id": "arb7",
+                    "source": "C",
+                    "target": "G"
+                }
+            },
+            {
+                "data": {
+                    "id": "arb8",
+                    "source": "C",
+                    "target": "I"
+                }
+            },
+            {
+                "data": {
+                    "id": "arb9",
+                    "source": "G",
+                    "target": "H"
+                }
+            }
+        ]
+    },
+    "stepData": [
+        {
+            "id": "0",
+            "type": "single",
+            "nodes": [
+                "B",
+                "D"
+            ],
+            "steps": [],
+            "description": "BD"
+        },
+        {
+            "id": "1",
+            "type": "single",
+            "nodes": [
+                "B",
+                "E"
+            ],
+            "steps": [],
+            "description": "BE"
+        },
+        {
+            "id": "2",
+            "type": "single",
+            "nodes": [
+                "A"
+            ],
+            "steps": [],
+            "description": "A"
+        },
+        {
+            "id": "3",
+            "type": "single",
+            "nodes": [
+                "A"
+            ],
+            "steps": [],
+            "description": "A"
+        },
+        {
+            "id": "4",
+            "type": "single",
+            "nodes": [
+                "A"
+            ],
+            "steps": [],
+            "description": "A"
+        },
+        {
+            "id": "5",
+            "type": "single",
+            "nodes": [
+                "A",
+                "B"
+            ],
+            "steps": [],
+            "description": "AB"
+        },
+        {
+            "id": "6",
+            "type": "single",
+            "nodes": [
+                "B",
+                "C"
+            ],
+            "steps": [],
+            "description": "BC"
+        },
+        {
+            "id": "7",
+            "type": "single",
+            "nodes": [
+                "C",
+                "F"
+            ],
+            "steps": [],
+            "description": "CF"
+        },
+        {
+            "id": "8",
+            "type": "single",
+            "nodes": [
+                "F",
+                "C"
+            ],
+            "steps": [],
+            "description": "FC"
+        },
+        {
+            "id": "9",
+            "type": "single",
+            "nodes": [
+                "C"
+            ],
+            "steps": [],
+            "description": "C"
+        },
+        {
+            "id": "10",
+            "type": "single",
+            "nodes": [
+                "C",
+                "F"
+            ],
+            "steps": [],
+            "description": "CF"
+        },
+        {
+            "id": "11",
+            "type": "single",
+            "nodes": [
+                "C",
+                "F"
+            ],
+            "steps": [],
+            "description": "CF"
+        },
+        {
+            "id": "12",
+            "type": "single",
+            "nodes": [
+                "F"
+            ],
+            "steps": [],
+            "description": "F"
+        },
+        {
+            "id": "13",
+            "type": "single",
+            "nodes": [
+                "F",
+                "C"
+            ],
+            "steps": [],
+            "description": "FC"
+        },
+        {
+            "id": "14",
+            "type": "single",
+            "nodes": [
+                "C",
+                "G"
+            ],
+            "steps": [],
+            "description": "CG"
+        },
+        {
+            "id": "15",
+            "type": "single",
+            "nodes": [
+                "G",
+                "H"
+            ],
+            "steps": [],
+            "description": "GH"
+        },
+        {
+            "id": "16",
+            "type": "single",
+            "nodes": [
+                "G",
+                "C"
+            ],
+            "steps": [],
+            "description": "GC"
+        },
+        {
+            "id": "17",
+            "type": "single",
+            "nodes": [
+                "G"
+            ],
+            "steps": [],
+            "description": "G"
+        },
+        {
+            "id": "18",
+            "type": "single",
+            "nodes": [
+                "C",
+                "B"
+            ],
+            "steps": [],
+            "description": "CB"
+        },
+        {
+            "id": "19",
+            "type": "single",
+            "nodes": [
+                "B",
+                "C"
+            ],
+            "steps": [],
+            "description": "BC"
+        },
+        {
+            "id": "20",
+            "type": "single",
+            "nodes": [
+                "C",
+                "I"
+            ],
+            "steps": [],
+            "description": "CI"
+        },
+        {
+            "id": "21",
+            "type": "single",
+            "nodes": [
+                "I",
+                "C"
+            ],
+            "steps": [],
+            "description": "IC"
+        },
+        {
+            "id": "22",
+            "type": "single",
+            "nodes": [
+                "C",
+                "F"
+            ],
+            "steps": [],
+            "description": "CF"
+        },
+        {
+            "id": "23",
+            "type": "single",
+            "nodes": [
+                "F"
+            ],
+            "steps": [],
+            "description": "F"
+        },
+        {
+            "id": "24",
+            "type": "single",
+            "nodes": [
+                "F",
+                "C"
+            ],
+            "steps": [],
+            "description": "FC"
+        },
+        {
+            "id": "25",
+            "type": "single",
+            "nodes": [
+                "C"
+            ],
+            "steps": [],
+            "description": "C"
+        },
+        {
+            "id": "26",
+            "type": "single",
+            "nodes": [
+                "C",
+                "B"
+            ],
+            "steps": [],
+            "description": "CB"
+        }
+    ],
+    "zoneData": [
+        {
+            "name": "zoneA",
+            "color": "#fbb4ae",
+            "base_color": "#FBDCD6"
+        },
+        {
+            "name": "zoneC",
+            "color": "#b3cde3",
+            "base_color": "#DBE6F2"
+        },
+        {
+            "name": "zoneB",
+            "color": "#ccebc5",
+            "base_color": "#E5F5E3"
+        }
+    ]
+}

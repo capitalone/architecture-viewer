@@ -1,9 +1,0 @@
-@startuml
-autonumber
-participant A
-participant B
-participant C
-
-    A -> B: AB
-    B -> C: BC
-@enduml

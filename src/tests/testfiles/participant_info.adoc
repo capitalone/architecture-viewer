@@ -1,7 +1,0 @@
-@startuml
-participant A
-note over A
-    this is some info on A<br/>
-    newlines idk
-end note
-@enduml

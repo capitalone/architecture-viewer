@@ -1,7 +1,0 @@
-@startuml
-title "some_title"
-participant some_id   << (X, #ffb2b2) Z1 >>
-participant some_id_2 << (X, #b2b2ff) Z2 >>
-
-some_id -> some_id_2: an example step
-@enduml
