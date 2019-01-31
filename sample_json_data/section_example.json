@@ -1,0 +1,323 @@
+{
+    "title": "sectioning example",
+    "graphData": {
+        "nodes": [
+            {
+                "data": {
+                    "id": "A",
+                    "fname": "A",
+                    "zone": "#FBDCD6",
+                    "info": "qwer"
+                }
+            },
+            {
+                "data": {
+                    "id": "B",
+                    "fname": "B",
+                    "zone": "#FBDCD6",
+                    "info": "qwer"
+                }
+            },
+            {
+                "data": {
+                    "id": "C",
+                    "fname": "C",
+                    "zone": "#FBDCD6",
+                    "info": "qwer"
+                }
+            },
+            {
+                "data": {
+                    "id": "D",
+                    "fname": "D",
+                    "zone": "#FBDCD6",
+                    "info": "qwer"
+                }
+            },
+            {
+                "data": {
+                    "id": "E",
+                    "fname": "E",
+                    "zone": "#FBDCD6",
+                    "info": "qwer"
+                }
+            },
+            {
+                "data": {
+                    "id": "F",
+                    "fname": "F",
+                    "zone": "#FBDCD6",
+                    "info": "qwer"
+                }
+            },
+            {
+                "data": {
+                    "id": "G",
+                    "fname": "G",
+                    "zone": "#FBDCD6",
+                    "info": "qwer"
+                }
+            },
+            {
+                "data": {
+                    "id": "H",
+                    "fname": "H",
+                    "zone": "#FBDCD6",
+                    "info": "qwer"
+                }
+            }
+        ],
+        "edges": [
+            {
+                "data": {
+                    "id": "1",
+                    "source": "A",
+                    "target": "B"
+                }
+            },
+            {
+                "data": {
+                    "id": "2",
+                    "source": "B",
+                    "target": "H"
+                }
+            },
+            {
+                "data": {
+                    "id": "3",
+                    "source": "B",
+                    "target": "C"
+                }
+            },
+            {
+                "data": {
+                    "id": "4",
+                    "source": "C",
+                    "target": "E"
+                }
+            },
+            {
+                "data": {
+                    "id": "5",
+                    "source": "B",
+                    "target": "F"
+                }
+            }
+        ]
+    },
+    "stepData": [
+        {
+            "id": "0",
+            "type": "single",
+            "groupName": "",
+            "nodes": [
+                "A",
+                "B"
+            ],
+            "steps": [],
+            "description": "AB",
+            "note": "AB note"
+        },
+        {
+            "id": "1",
+            "type": "single",
+            "groupName": "",
+            "nodes": [
+                "B",
+                "H"
+            ],
+            "steps": [],
+            "description": "BH",
+            "note": "BH note"
+        },
+        {
+            "id": "2",
+            "type": "single",
+            "groupName": "",
+            "nodes": [
+                "H"
+            ],
+            "steps": [],
+            "description": "H",
+            "note": ""
+        },
+        {
+            "id": "3",
+            "type": "single",
+            "groupName": "",
+            "nodes": [
+                "H",
+                "B"
+            ],
+            "steps": [],
+            "description": "HB",
+            "note": ""
+        },
+        {
+            "id": "g0",
+            "type": "group",
+            "groupName": "loop",
+            "nodes": [],
+            "steps": [
+                {
+                    "id": "4",
+                    "type": "single",
+                    "groupName": "",
+                    "nodes": [
+                        "B",
+                        "C"
+                    ],
+                    "steps": [],
+                    "description": "BC",
+                    "note": "BC note"
+                },
+                {
+                    "id": "5",
+                    "type": "single",
+                    "groupName": "",
+                    "nodes": [
+                        "C",
+                        "E"
+                    ],
+                    "steps": [],
+                    "description": "CE",
+                    "note": ""
+                },
+                {
+                    "id": "6",
+                    "type": "single",
+                    "groupName": "",
+                    "nodes": [
+                        "E"
+                    ],
+                    "steps": [],
+                    "description": "E",
+                    "note": ""
+                },
+                {
+                    "id": "7",
+                    "type": "single",
+                    "groupName": "",
+                    "nodes": [
+                        "E",
+                        "C"
+                    ],
+                    "steps": [],
+                    "description": "EC",
+                    "note": ""
+                },
+                {
+                    "id": "8",
+                    "type": "single",
+                    "groupName": "",
+                    "nodes": [
+                        "C",
+                        "B"
+                    ],
+                    "steps": [],
+                    "description": "CB",
+                    "note": ""
+                }
+            ],
+            "description": "",
+            "note": ""
+        },
+        {
+            "id": "g1",
+            "type": "group",
+            "groupName": "loop",
+            "nodes": [],
+            "steps": [
+                {
+                    "id": "9",
+                    "type": "single",
+                    "groupName": "",
+                    "nodes": [
+                        "B",
+                        "F"
+                    ],
+                    "steps": [],
+                    "description": "BF",
+                    "note": "BF note"
+                },
+                {
+                    "id": "10",
+                    "type": "single",
+                    "groupName": "",
+                    "nodes": [
+                        "F"
+                    ],
+                    "steps": [],
+                    "description": "F",
+                    "note": ""
+                },
+                {
+                    "id": "11",
+                    "type": "single",
+                    "groupName": "",
+                    "nodes": [
+                        "F"
+                    ],
+                    "steps": [],
+                    "description": "F",
+                    "note": ""
+                },
+                {
+                    "id": "12",
+                    "type": "single",
+                    "groupName": "",
+                    "nodes": [
+                        "F",
+                        "B"
+                    ],
+                    "steps": [],
+                    "description": "FB",
+                    "note": ""
+                },
+                {
+                    "id": "13",
+                    "type": "single",
+                    "groupName": "",
+                    "nodes": [
+                        "B",
+                        "F"
+                    ],
+                    "steps": [],
+                    "description": "BF",
+                    "note": ""
+                },
+                {
+                    "id": "14",
+                    "type": "single",
+                    "groupName": "",
+                    "nodes": [
+                        "F"
+                    ],
+                    "steps": [],
+                    "description": "F",
+                    "note": ""
+                },
+                {
+                    "id": "15",
+                    "type": "single",
+                    "groupName": "",
+                    "nodes": [
+                        "F",
+                        "B"
+                    ],
+                    "steps": [],
+                    "description": "FB",
+                    "note": ""
+                }
+            ],
+            "description": "",
+            "note": ""
+        }
+    ],
+    "zoneData": [
+        {
+            "name": "main",
+            "color": "#FBDCD6"
+        }
+    ]
+}

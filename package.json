@@ -1,0 +1,67 @@
+{
+  "private": true,
+  "name": "architecture-viewer",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
+    "build": "preact build --no-prerender",
+    "serve": "preact build --no-prerender && preact serve",
+    "dev": "preact watch",
+    "lint": "eslint src",
+    "test": "jest ./tests",
+    "deploy": "gulp deploy",
+    "license": "license-checker --csv --production > licenses.csv"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-synacor"
+  },
+  "eslintIgnore": [
+    "build/*"
+  ],
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-synacor": "^2.0.2",
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4",
+    "identity-obj-proxy": "^3.0.0",
+    "if-env": "^1.0.0",
+    "jest": "^21.2.1",
+    "license-checker": "^20.2.0",
+    "preact-cli": "^2.1.0",
+    "preact-render-spy": "^1.2.1"
+  },
+  "dependencies": {
+    "ajv": "^6.5.3",
+    "cytoscape": "^3.2.16",
+    "cytoscape-dagre": "^2.2.1",
+    "cytoscape-popper": "^1.0.2",
+    "dagre": "^0.8.2",
+    "preact": "^8.2.6",
+    "preact-compat": "^3.17.0",
+    "preact-router": "^2.5.7",
+    "tippy.js": "^2.5.4"
+  },
+  "jest": {
+    "verbose": true,
+    "setupFiles": [],
+    "testURL": "http://localhost:8080",
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/tests/__mocks__/fileMock.js",
+      "\\.(css|less|scss)$": "identity-obj-proxy",
+      "^./style$": "identity-obj-proxy",
+      "^preact$": "<rootDir>/node_modules/preact/dist/preact.min.js",
+      "^react$": "preact-compat",
+      "^react-dom$": "preact-compat",
+      "^create-react-class$": "preact-compat/lib/create-react-class",
+      "^react-addons-css-transition-group$": "preact-css-transition-group"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@startuml
+
+title "Push Notification Enrollment"
+
+hide footbox
+autonumber "[0] "
+
+participant "Client App" as Client << (U, #ccebc5) user >>
+
+participant "Orchestration Layer" as Orch << (C, #b3cde3) capital one >>
+participant "Messaging Server" as MS << (C, #b3cde3) capital one >>
+note over MS
+This is where you can put useful information like links to documentation or support processes.
+end note
+
+participant "Notification Subscription Server" as NSS << (C, #b3cde3) capital one >>
+
+participant "APNS" as APNS << (E, #fbb4ae) external >>
+participant "GCM" as GCM << (E, #fbb4ae) external >>
+
+==Customer Action==
+
+Client -> Client: First time login, or app upgrade, or user toggles notifications on/off in the app.
+
+==Device Registration==
+
+Client -> APNS: If iOS, register device token in APNS
+Client -> GCM: If Android, register device token in GCM
+
+==Update Messaging Server==
+
+Client -> Orch: Update device token
+
+Orch -> MS: Get existing subscriptions
+MS -> Orch: If success, return all
+Orch -> Orch: Check if device token is present
+
+Orch -> MS: If device token is present, stop (skip to next group)
+
+Orch -> MS: If device token not present, add subscription
+note left
+{ "device_token" : "APA91bE_YiasYasbda..." }
+end note
+MS -> Orch: Return success/failure
+
+==Update Master Subscription==
+
+Orch -> NSS: Register device token
+NSS -> Orch: Return success/failure
+
+Orch -> Orch: Swallow failure 
+Orch -> Client: Return success/failure
+
+==Replicate Subscriptions==
+
+Client -> Orch: Update subscriptions 
+Orch -> MS: Update subscriptions
+
+MS -> MS: Update subscription in Messaging Server
+
+MS -> Orch: Return success/failure
+Orch -> Orch: Swallow failure
+Orch -> Client: Return success/failure
+
+@enduml

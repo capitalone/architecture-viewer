@@ -1,0 +1,17 @@
+@startuml
+autonumber
+participant A
+participant B
+    A -> B: AB1
+    A -\ B: AB2
+    A -/ B: AB3
+    A ->> B: AB4
+    A -\\ B: AB5
+    A -// B: AB6
+    A --> B: AB7
+    A --\\ B: AB8
+    A --// B: AB9
+    A -->> B: AB10
+    B <- A: AB11
+    A <-> B: AB12 //shouldn't be parsed
+@enduml

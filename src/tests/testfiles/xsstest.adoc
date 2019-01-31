@@ -1,0 +1,15 @@
+@startuml
+autonumber
+participant A
+participant B
+participant C
+
+    A -> B: AB
+    note left: AB note
+
+    A -> C: AC
+    note right
+    <script>alert("maybe")</script>
+    end note
+
+@enduml

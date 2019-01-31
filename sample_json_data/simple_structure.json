@@ -1,0 +1,131 @@
+{
+    "title": "simple",
+    "graphData": {
+        "nodes": [
+            {
+                "data": {
+                    "id": "AAA",
+                    "fname": "AAA",
+                    "zone": "#FBDCD6",
+                    "info": "asd"
+                }
+            },
+            {
+                "data": {
+                    "id": "BBB",
+                    "fname": "BBB",
+                    "zone": "#FBDCD6"
+                }
+            },
+            {
+                "data": {
+                    "id": "CCC",
+                    "fname": "CCC",
+                    "zone": "#FBDCD6"
+                }
+            },
+            {
+                "data": {
+                    "id": "DDD",
+                    "fname": "DDD",
+                    "zone": "#FBDCD6"
+                }
+            },
+            {
+                "data": {
+                    "id": "EEE",
+                    "fname": "EEE",
+                    "zone": "#FBDCD6"
+                }
+            },
+            {
+                "data": {
+                    "id": "FFF",
+                    "fname": "FFF",
+                    "zone": "#FBDCD6"
+                }
+            },
+            {
+                "data": {
+                    "id": "GGG",
+                    "fname": "GGG",
+                    "zone": "#FBDCD6"
+                }
+            },
+            {
+                "data": {
+                    "id": "HHH",
+                    "fname": "HHH",
+                    "zone": "#FBDCD6"
+                }
+            }
+        ],
+        "edges": [
+            {
+                "data": {
+                    "id": "1",
+                    "source": "AAA",
+                    "target": "BBB"
+                }
+            },
+            {
+                "data": {
+                    "id": "2",
+                    "source": "AAA",
+                    "target": "CCC"
+                }
+            },
+            {
+                "data": {
+                    "id": "3",
+                    "source": "BBB",
+                    "target": "DDD"
+                }
+            },
+            {
+                "data": {
+                    "id": "4",
+                    "source": "CCC",
+                    "target": "EEE"
+                }
+            },
+            {
+                "data": {
+                    "id": "5",
+                    "source": "DDD",
+                    "target": "FFF"
+                }
+            },
+            {
+                "data": {
+                    "id": "6",
+                    "source": "DDD",
+                    "target": "GGG"
+                }
+            },
+            {
+                "data": {
+                    "id": "7",
+                    "source": "FFF",
+                    "target": "HHH"
+                }
+            },
+            {
+                "data": {
+                    "id": "8",
+                    "source": "GGG",
+                    "target": "EEE"
+                }
+            }
+        ]
+    },
+    "stepData": [
+
+    ],
+    "zoneData": [
+        {
+            "name": "main",
+            "color": "#FBDCD6"
+        }
+    ]
+}

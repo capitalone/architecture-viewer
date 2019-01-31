@@ -1,0 +1,6 @@
+@startuml
+autonumber
+participant A
+actor "B B B" as B
+participant C
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+autonumber
+participant "AAA" as A
+participant "BBB" as B
+participant "CCC" as C
+
+    A -> B: AB
+    B -> C: BC
+@enduml

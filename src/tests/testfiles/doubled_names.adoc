@@ -1,0 +1,10 @@
+@startuml
+
+participant A
+participant "B" as B
+participant "B" as C
+
+A -> B: result?
+A -> C: result
+
+@enduml

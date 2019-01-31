@@ -1,0 +1,55 @@
+{
+    "title": "some_title",
+    "graphData": {
+        "nodes": [
+            {
+                "data": {
+                    "id": "s_id",
+                    "fname": "some_id",
+                    "zone": "#ffb2b2",
+                    "info": "info about some_id"
+                }
+            },
+            {
+                "data": {
+                    "id": "s_id_2",
+                    "fname": "some_id_2",
+                    "zone": "#b2b2ff",
+                    "info": "info about some_id_2"
+                }
+            }
+        ],
+        "edges": [
+            {
+                "data": {
+                    "id": "some_edge_id",
+                    "source": "s_id",
+                    "target": "s_id_2"
+                }
+            }
+        ]
+    },
+    "stepData": [
+        {
+            "id": "0",
+            "type": "single",
+            "nodes": [
+                "s_id",
+                "s_id_2"
+            ],
+            "steps": [],
+            "description": "an example step",
+            "note": ""
+        }
+    ],
+    "zoneData": [
+        {
+            "name": "zone1",
+            "color": "#ffb2b2"
+        },
+        {
+            "name": "zone2",
+            "color": "#b2b2ff"
+        }
+    ]
+}

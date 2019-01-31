@@ -1,0 +1,19 @@
+@startuml
+
+
+participant plantuml
+participant json
+participant parser
+participant validator
+participant renderer
+participant TOC
+participant diagram
+
+plantuml -> parser: a plantUML file is uploaded to the app, and parsed
+json -> parser: a JSON file is uploaded to the app, and parsed
+parser -> validator: the parsed result is passed to the validator, which is then validated (mostly for user generated JSON)
+validator -> renderer: after the data is validated, the data is rendered by the app's renderer
+renderer -> TOC: the step data is rendered in a TOC widget located on the right of the app
+renderer -> diagram: the diagram is rendered using the graphData, and is located on the left of the app
+
+@enduml

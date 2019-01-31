@@ -1,0 +1,5 @@
+@startuml
+participant A << (X, #111) zoneA >>
+participant "BBB" as B << (X, #222) zoneB >>
+participant C
+@enduml
