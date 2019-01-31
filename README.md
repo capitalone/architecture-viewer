@@ -34,17 +34,17 @@ The PlantUML source for this demo is [here](sample_plantuml_data/example.adoc).
 
 ## Usage 
 
-1) Open a JSON or PlantUML file directly [in the webpage](https://github.com/pages/capitalone/architecture-viewer/).
+1) Open a JSON or PlantUML file directly [in the webpage](https://capitalone.github.io/architecture-viewer/).
 
-2) Launch [the webpage](https://github.com/pages/capitalone/architecture-viewer/?url=https://github.com/raw/capitalone/architecture-viewer/master/sample_json_data/large_web.json) directly with a `?url=` query parameter linking to the JSON or PlantUML file to display, e.g.
+2) Launch [the webpage](https://capitalone.github.io/architecture-viewer/?url=https://github.com/raw/capitalone/architecture-viewer/master/sample_json_data/large_web.json) directly with a `?url=` query parameter linking to the JSON or PlantUML file to display, e.g.
 ```
-https://github.com/pages/capitalone/architecture-viewer/?url=https://github.com/raw/capitalone/architecture-viewer/master/sample_json_data/large_web.json
+https://capitalone.github.io/architecture-viewer/?url=https://github.com/raw/capitalone/architecture-viewer/master/sample_json_data/large_web.json
 ```
 
-The same can be done with a plantUML file, as seen [here](https://github.com/pages/capitalone/architecture-viewer/?url=https://github.com/raw/capitalone/architecture-viewer/master/sample_plantuml_data/example.adoc)
+The same can be done with a plantUML file, as seen [here](https://capitalone.github.io/architecture-viewer/?url=https://github.com/raw/capitalone/architecture-viewer/master/sample_plantuml_data/example.adoc)
 
 ```
-https://github.com/pages/capitalone/architecture-viewer/?url=https://github.com/raw/capitalone/architecture-viewer/master/sample_plantuml_data/example.adoc
+https://capitalone.github.io/architecture-viewer/?url=https://github.com/raw/capitalone/architecture-viewer/master/sample_plantuml_data/example.adoc
 ```
 
 ## Features
@@ -190,7 +190,7 @@ Example (JSON):
 You can embed the interactive architecture-viewer using an `<iframe>` tag, e.g.
 
 ```html
-<iframe height="600" src="https://github.com/pages/capitalone/architecture-viewer/?url=https://github.com/raw/capitalone/architecture-viewer/master/sample_plantuml_data/example.adoc" width="100%"> </iframe>
+<iframe height="600" src="https://capitalone.github.io/architecture-viewer/?url=https://github.com/raw/capitalone/architecture-viewer/master/sample_plantuml_data/example.adoc" width="100%"> </iframe>
 ```
 
 Some content management/collaboration software (e.g. [Confluence](https://www.atlassian.com/software/confluence)) will block external sites, so you may need to add your architecture-viewer domain to a whitelist before it will display.
