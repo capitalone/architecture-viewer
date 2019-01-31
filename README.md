@@ -13,7 +13,6 @@
     - [Deployment (for developers)](#deployment-for-developers)
       - [Build Requirements](#build-requirements)
       - [Build steps](#build-steps)
-    - [Future work](#future-work)
     - [Contributing](#contributing)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -226,18 +225,6 @@ The `build` directory is a static website so it can be deployed to any static ho
 
 If you need to customize the base resource paths used by this web application, you can edit the provided [preact.config.js](preact.config.js).
 
-
-### Future work
-
-- Add functionality for specific error reporting (aka determine which line and character in the PlantUML/JSON file is invalid)
-- support multiple plantUML files being loaded in the same diagram
-- support parsing out extraneous features (e.g. the `<color #xyz>` tag in notes)
-- support for parsing color tagged arrows (e.g `-[#red]>`)
-- add support for any requested syntax
-- be able to handle unsupported features without breaking
-- support the ALT syntax (medium-high priority)
-
-
 ### Contributing
 
 We welcome Your interest in Capital One’s Open Source Projects (the “Project”). Any Contributor to the Project must accept and sign an Agreement indicating agreement to the license terms below. Except for the license granted in this Agreement to Capital One and to recipients of software distributed by Capital One, You reserve all right, title, and interest in and to Your Contributions; this Agreement does not impact Your rights to use Your own Contributions for any other purpose.
@@ -246,5 +233,4 @@ We welcome Your interest in Capital One’s Open Source Projects (the “Project
 
 [Sign the Corporate Agreement](https://docs.google.com/forms/d/e/1FAIpQLSeAbobIPLCVZD_ccgtMWBDAcN68oqbAJBQyDTSAQ1AkYuCp_g/viewform?usp=send_form)
 
-This project adheres to the [Open Code of Conduct](http://www.capitalone.io/codeofconduct/). By participating, you are
-expected to honor this code.
+This project adheres to the [Open Code of Conduct](http://www.capitalone.io/codeofconduct/). By participating, you are expected to honor this code.
