@@ -35,15 +35,15 @@ The PlantUML source for this demo is [here](sample_plantuml_data/example.adoc).
 
 1) Open a JSON or PlantUML file directly [in the webpage](https://capitalone.github.io/architecture-viewer/).
 
-2) Launch [the webpage](https://capitalone.github.io/architecture-viewer/?url=https://github.com/raw/capitalone/architecture-viewer/master/sample_json_data/large_web.json) directly with a `?url=` query parameter linking to the JSON or PlantUML file to display, e.g.
+2) Launch [the webpage](https://capitalone.github.io/architecture-viewer/?url=https://raw.githubusercontent.com/capitalone/architecture-viewer/master/sample_json_data/large_web.json) directly with a `?url=` query parameter linking to the JSON or PlantUML file to display, e.g.
 ```
-https://capitalone.github.io/architecture-viewer/?url=https://github.com/raw/capitalone/architecture-viewer/master/sample_json_data/large_web.json
+https://capitalone.github.io/architecture-viewer/?url=https://raw.githubusercontent.com/capitalone/architecture-viewer/master/sample_json_data/large_web.json
 ```
 
-The same can be done with a plantUML file, as seen [here](https://capitalone.github.io/architecture-viewer/?url=https://github.com/raw/capitalone/architecture-viewer/master/sample_plantuml_data/example.adoc)
+The same can be done with a plantUML file, as seen [here](https://capitalone.github.io/architecture-viewer/?url=https://raw.githubusercontent.com/capitalone/architecture-viewer/master/sample_plantuml_data/example.adoc)
 
 ```
-https://capitalone.github.io/architecture-viewer/?url=https://github.com/raw/capitalone/architecture-viewer/master/sample_plantuml_data/example.adoc
+https://capitalone.github.io/architecture-viewer/?url=https://raw.githubusercontent.com/capitalone/architecture-viewer/master/sample_plantuml_data/example.adoc
 ```
 
 ## Features
