@@ -35,7 +35,7 @@
     "ajv": "^6.5.3",
     "cytoscape": "^3.2.16",
     "cytoscape-dagre": "^2.2.1",
-    "cytoscape-popper": "^1.0.2",
+    "cytoscape-popper": "^1.0.7",
     "dagre": "^0.8.2",
     "preact": "^8.2.6",
     "preact-compat": "^3.17.0",
