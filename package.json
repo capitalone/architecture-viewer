@@ -37,7 +37,7 @@
     "cytoscape-dagre": "^2.2.1",
     "cytoscape-popper": "^1.0.2",
     "dagre": "^0.8.2",
-    "preact": "^8.2.6",
+    "preact": "^8.5.3",
     "preact-compat": "^3.17.0",
     "preact-router": "^2.5.7",
     "tippy.js": "^2.5.4"
