@@ -124,12 +124,12 @@ export default class Diagram extends Component {
 
             style: [
                 {
-                    selector: 'node',
+                    selector: '[fname]',
                     style: {
                         'height': 125,
                         'width': 175,
                         'background-color': 'data(zone)',
-                        'content': 'data(fname)',
+                        'content': e => e.data('fname') ? e.data('fname') : '',
                         'text-valign': 'center',
                         'text-halign': 'center',
                         'font-size': 25,
@@ -142,12 +142,12 @@ export default class Diagram extends Component {
                     }
                 },
                 {
-                    selector: '$node > node',
+                    selector: '$node > [fname]',
                     style: {
                         'height': 125,
                         'width': 175,
                         'background-color': 'data(zone)',
-                        'content': 'data(fname)',
+                        'content': e => e.data('fname') ? e.data('fname') : '',
                         'text-valign': 'top',
                         'text-halign': 'center',
                         'font-size': 25,
@@ -273,7 +273,7 @@ export default class Diagram extends Component {
             // was with a timeout
             // TODO: find a better way to do this
             setTimeout(() => {
-                console.log(tippyMap[evt.target.id()]);
+                // console.log(tippyMap[evt.target.id()]);
                 tippyMap[evt.target.id()].show();
             }, 250);
         })

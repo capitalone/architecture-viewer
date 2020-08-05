@@ -1,12 +1,5 @@
-const fs     = require("fs");
-const path   = require("path");
-const parser = require("../utils/parser");
+const parser = require("../src/utils/parser");
 
-const parseFile = (filename) => {
-    return fs.readFileSync(filename, "ascii")
-        .toString()
-        .split("\n");
-}
 
 describe("file processor", () => {
     it("should create an empty structure given an empty file", () => {
@@ -20,8 +13,7 @@ describe("file processor", () => {
             zoneData: []
         };
 
-        const filename = path.join(__dirname, "testfiles/empty.adoc");
-        const contents = parseFile(filename);
+        const contents = require("./testfiles/empty.adoc").split("\n");
         const data = parser.parseContents(contents);
 
         expect(data).toEqual(empty);
@@ -55,8 +47,7 @@ describe("file processor", () => {
             }
         ];
 
-        const filename = path.join(__dirname, "testfiles/unaliased_participants.adoc");
-        const contents = parseFile(filename);
+        const contents = require("./testfiles/unaliased_participants.adoc").split("\n");
         const data = parser.parseContents(contents);
 
         expect(data.graphData.nodes).toEqual(expected);
@@ -95,8 +86,7 @@ describe("file processor", () => {
             },
         ];
 
-        const filename = path.join(__dirname, "testfiles/aliased_participants.adoc");
-        const contents = parseFile(filename);
+        const contents = require("./testfiles/aliased_participants.adoc").split("\n");
         const data = parser.parseContents(contents);
 
         expect(data.graphData.nodes).toEqual(expected);
@@ -127,8 +117,7 @@ describe("file processor", () => {
             }
         ];
 
-        const filename = path.join(__dirname, "testfiles/participant_decl.adoc");
-        const contents = parseFile(filename);
+        const contents = require("./testfiles/participant_decl.adoc").split("\n");
         const data = parser.parseContents(contents);
 
         expect(data.graphData.nodes).toEqual(expected);
@@ -174,8 +163,7 @@ describe("file processor", () => {
             },
         ]
 
-        const filename = path.join(__dirname, "testfiles/zoned_participants.adoc");
-        const contents = parseFile(filename);
+        const contents = require("./testfiles/zoned_participants.adoc").split("\n");
         const data = parser.parseContents(contents);
 
         expect(data.graphData.nodes).toEqual(expectedNodes);
@@ -221,8 +209,7 @@ describe("file processor", () => {
             },
         ];
 
-        const filename = path.join(__dirname, "testfiles/steps_unaliased.adoc");
-        const contents = parseFile(filename);
+        const contents = require("./testfiles/steps_unaliased.adoc").split("\n");
         const data = parser.parseContents(contents);
 
         expect(data.graphData.edges).toEqual(expectedEdges);
@@ -266,8 +253,7 @@ describe("file processor", () => {
             },
         ];
 
-        const filename = path.join(__dirname, "testfiles/steps_aliased.adoc");
-        const contents = parseFile(filename);
+        const contents = require("./testfiles/steps_aliased.adoc").split("\n");
         const data = parser.parseContents(contents);
 
         expect(data.graphData.edges).toEqual(expectedEdges);
@@ -311,8 +297,7 @@ describe("file processor", () => {
             },
         ];
 
-        const filename = path.join(__dirname, "testfiles/steps_mixed.adoc");
-        const contents = parseFile(filename);
+        const contents = require("./testfiles/steps_mixed.adoc").split("\n");
         const data = parser.parseContents(contents);
 
         expect(data.graphData.edges).toEqual(expectedEdges);
@@ -421,8 +406,7 @@ describe("file processor", () => {
             },
         ];
 
-        const filename = path.join(__dirname, "testfiles/steps_steptest.adoc");
-        const contents = parseFile(filename);
+        const contents = require("./testfiles/steps_steptest.adoc").split("\n");
         const data = parser.parseContents(contents);
 
         expect(data.graphData.edges).toEqual(expectedEdges);
@@ -479,8 +463,7 @@ describe("file processor", () => {
             }
         ];
 
-        const filename = path.join(__dirname, "testfiles/steps_loop.adoc");
-        const contents = parseFile(filename);
+        const contents = require("./testfiles/steps_loop.adoc").split("\n");
         const data = parser.parseContents(contents);
 
         expect(data.stepData).toEqual(expectedSteps);
@@ -532,8 +515,7 @@ describe("file processor", () => {
             }
         ];
 
-        const filename = path.join(__dirname, "testfiles/steps_group.adoc");
-        const contents = parseFile(filename);
+        const contents = require("./testfiles/steps_group.adoc").split("\n");
         const data = parser.parseContents(contents);
 
         expect(data.stepData).toEqual(expectedSteps);
@@ -585,8 +567,7 @@ describe("file processor", () => {
             }
         ];
 
-        const filename = path.join(__dirname, "testfiles/steps_group_mixed.adoc");
-        const contents = parseFile(filename);
+        const contents = require("./testfiles/steps_group_mixed.adoc").split("\n");
         const data = parser.parseContents(contents);
 
         expect(data.stepData).toEqual(expectedSteps);
@@ -615,8 +596,7 @@ describe("file processor", () => {
             },
         ];
 
-        const filename = path.join(__dirname, "testfiles/notes_singleline.adoc");
-        const contents = parseFile(filename);
+        const contents = require("./testfiles/notes_singleline.adoc").split("\n");
         const data = parser.parseContents(contents);
 
         expect(data.stepData).toEqual(expectedSteps);
@@ -642,8 +622,7 @@ describe("file processor", () => {
             },
         ];
 
-        const filename = path.join(__dirname, "testfiles/notes_multiline.adoc");
-        const contents = parseFile(filename);
+        const contents = require("./testfiles/notes_multiline.adoc").split("\n");
         const data = parser.parseContents(contents);
 
         expect(data.stepData).toEqual(expectedSteps);
@@ -735,8 +714,7 @@ describe("file processor", () => {
             },
         ];
 
-        const filename = path.join(__dirname, "testfiles/dividers.adoc");
-        const contents = parseFile(filename);
+        const contents = require("./testfiles/dividers.adoc").split("\n");
         const data = parser.parseContents(contents);
 
         expect(data.stepData).toEqual(expectedSteps);
@@ -747,8 +725,7 @@ describe("file processor", () => {
         THE PARTICIPANT INFO FEATURE
     */
     it("should add an info property on a node if a note is created for the participant", () => {
-        const filename = path.join(__dirname, "testfiles/participant_info.adoc");
-        const contents = parseFile(filename);
+        const contents = require("./testfiles/participant_info.adoc").split("\n");
         const data = parser.parseContents(contents);
 
         const expectedNode = {
@@ -770,8 +747,7 @@ describe("file processor", () => {
 
     // supporting this case because plantUML behaves the same way
     it("should generate a participant if one isn't declared", () => {
-        const filename = path.join(__dirname, "testfiles/undeclaredparticipant.adoc");
-        const contents = parseFile(filename);
+        const contents = require("./testfiles/undeclaredparticipant.adoc").split("\n");
         const data = parser.parseContents(contents);
 
         expect(data.graphData.nodes).toContainEqual({
@@ -784,8 +760,7 @@ describe("file processor", () => {
     })
 
     it("should allow the same name in quotes per participant", () => {
-        const filename = path.join(__dirname, "testfiles/doubled_names.adoc");
-        const contents = parseFile(filename);
+        const contents = require("./testfiles/doubled_names.adoc").split("\n");
         const data = parser.parseContents(contents);
 
         const expectedEdges = [
@@ -809,8 +784,7 @@ describe("file processor", () => {
     })
 
     it("should generate supernodes in a sane way", () => {
-        const filename = path.join(__dirname, "testfiles/supernodes.adoc");
-        const contents = parseFile(filename);
+        const contents = require("./testfiles/supernodes.adoc").split("\n");
         const data = parser.parseContents(contents);
 
         const expectedZone = {

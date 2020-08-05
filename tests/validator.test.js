@@ -1,8 +1,8 @@
-import validator from '../utils/dataValidator';
+import validator from '../src/utils/dataValidator';
 
 
 //The given example files for users to test out themselves
-const base_dir = '../../sample_json_data/'
+const base_dir = '../sample_json_data/'
 
 const simple_structure = require(base_dir + 'simple_structure.json');
 const section_example = require(base_dir + 'section_example.json');
