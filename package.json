@@ -8,6 +8,7 @@
     "serve": "sirv build --port 8080 --cors --single",
     "dev": "preact watch",
     "lint": "eslint src",
+    "license": "license-checker --csv --production > licenses.csv",
     "test": "jest"
   },
   "eslintConfig": {
