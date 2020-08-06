@@ -9,6 +9,7 @@
     "dev": "preact watch",
     "lint": "eslint src",
     "license": "license-checker --csv --production > licenses.csv",
+    "deploy": "gulp deploy",
     "test": "jest"
   },
   "eslintConfig": {
