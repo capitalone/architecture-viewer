@@ -21,8 +21,8 @@ export default function (config, env, helpers) {
     if (env.production) {
 
         // Keep infinity when minifying to avoid low severity static analysis warnings
-        let { plugin } = helpers.getPluginsByName(config, "UglifyJsPlugin")[0];
-        plugin.options.compress.keep_infinity = true;
+        //let { plugin } = helpers.getPluginsByName(config, "UglifyJsPlugin")[0];
+        //plugin.options.compress.keep_infinity = true;
         
         // Use a relative path for the base URL so the web application works when
         // hosting through enterprise or public GitHub Pages.
