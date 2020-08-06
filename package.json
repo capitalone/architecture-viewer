@@ -22,6 +22,8 @@
     "enzyme-adapter-preact-pure": "^2.0.0",
     "eslint": "^6.0.1",
     "eslint-config-preact": "^1.1.0",
+    "gulp": "^4.0.2",
+    "gulp-gh-pages": "^0.5.4",
     "identity-obj-proxy": "^3.0.0",
     "license-checker": "^20.2.0",
     "jest": "^24.9.0",
