@@ -208,7 +208,7 @@ Some content management/collaboration software (e.g. [Confluence](https://www.at
 npm install
 
 # This will run a dev server on http://localhost:8080
-npm start
+npm run dev
 
 # This will run all the tests located in __tests__/
 npm run test
