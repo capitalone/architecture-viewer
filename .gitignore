@@ -3,3 +3,4 @@ node_modules/
 scripts/repo/
 scripts-output/*
 build/
+size-plugin.json
