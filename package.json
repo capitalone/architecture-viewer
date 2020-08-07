@@ -9,7 +9,7 @@
     "dev": "preact watch",
     "lint": "eslint src",
     "license": "license-checker --csv --production > licenses.csv",
-    "deploy": "gulp deploy",
+    "deploy": "gh-pages -d build",
     "test": "jest"
   },
   "eslintConfig": {
@@ -23,13 +23,12 @@
     "enzyme-adapter-preact-pure": "^2.0.0",
     "eslint": "^6.0.1",
     "eslint-config-preact": "^1.1.0",
-    "gulp": "^4.0.2",
-    "gulp-gh-pages": "^0.5.4",
+    "gh-pages": "^3.1.0",
     "identity-obj-proxy": "^3.0.0",
-    "license-checker": "^20.2.0",
     "jest": "^24.9.0",
     "jest-preset-preact": "^1.0.0",
     "jest-raw-loader": "^1.0.1",
+    "license-checker": "^20.2.0",
     "preact-cli": "^3.0.0",
     "preact-render-spy": "^1.2.1",
     "sirv-cli": "1.0.3"
@@ -46,6 +45,9 @@
     "tippy.js": "^2.5.4"
   },
   "jest": {
+    "modulePathIgnorePatterns": [
+      "<rootDir>/.publish/"
+    ],
     "preset": "jest-preset-preact",
     "setupFiles": [
       "<rootDir>/tests/__mocks__/browserMocks.js",
