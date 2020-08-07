@@ -198,8 +198,8 @@ Some content management/collaboration software (e.g. [Confluence](https://www.at
 
 #### Build Requirements
 
-- node (ideally v7 or later)
-- npm (if you meet the node requirements you SHOULD meet the npm requirements)
+- node (v12 or later)
+- npm (if you meet the node requirements you should meet the npm requirements)
 
 #### Build steps
 
@@ -207,18 +207,17 @@ Some content management/collaboration software (e.g. [Confluence](https://www.at
 # Install dependencies
 npm install
 
-# This will run a dev server on http://localhost:8080
+# Start a dev server on http://0.0.0.0:8080/
 npm run dev
 
-# This will run all the tests located in __tests__/
+# Run all the tests located in `tests/`
 npm run test
 
-# This will build the app and place the built files in build/
+# Build the app and place the built files in `build/`
 npm run build
 
-# This will deploy the contents of build/ to the gh-pages branch
+# Deploy the contents of `build/` to the `gh-pages` branch (assumes you have git commit permission)
 npm run deploy
-
 ```
 
 The `build` directory is a static website so it can be deployed to any static hosting platform. 
@@ -229,7 +228,7 @@ If you need to customize the base resource paths used by this web application, y
 
 We welcome Your interest in Capital One’s Open Source Projects (the “Project”). Any Contributor to the Project must accept and sign an Agreement indicating agreement to the license terms below. Except for the license granted in this Agreement to Capital One and to recipients of software distributed by Capital One, You reserve all right, title, and interest in and to Your Contributions; this Agreement does not impact Your rights to use Your own Contributions for any other purpose.
 
-[Sign the Individual Agreement](https://docs.google.com/forms/d/19LpBBjykHPox18vrZvBbZUcK6gQTj7qv1O5hCduAZFU/viewform)
+[Sign the Individual Agreement](https://cla-assistant.io/capitalone/architecture-viewer)
 
 [Sign the Corporate Agreement](https://docs.google.com/forms/d/e/1FAIpQLSeAbobIPLCVZD_ccgtMWBDAcN68oqbAJBQyDTSAQ1AkYuCp_g/viewform?usp=send_form)
 
