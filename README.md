@@ -228,8 +228,6 @@ If you need to customize the base resource paths used by this web application, y
 
 We welcome Your interest in Capital One’s Open Source Projects (the “Project”). Any Contributor to the Project must accept and sign an Agreement indicating agreement to the license terms below. Except for the license granted in this Agreement to Capital One and to recipients of software distributed by Capital One, You reserve all right, title, and interest in and to Your Contributions; this Agreement does not impact Your rights to use Your own Contributions for any other purpose.
 
-[Sign the Individual Agreement](https://cla-assistant.io/capitalone/architecture-viewer)
-
-[Sign the Corporate Agreement](https://docs.google.com/forms/d/e/1FAIpQLSeAbobIPLCVZD_ccgtMWBDAcN68oqbAJBQyDTSAQ1AkYuCp_g/viewform?usp=send_form)
+[Sign the Contributor Agreement](https://cla-assistant.io/capitalone/architecture-viewer)
 
 This project adheres to the [Open Code of Conduct](http://www.capitalone.io/codeofconduct/). By participating, you are expected to honor this code.
