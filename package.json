@@ -36,7 +36,7 @@
   "dependencies": {
     "ajv": "^6.12.3",
     "cytoscape": "^3.15.2",
-    "cytoscape-dagre": "^2.2.2",
+    "cytoscape-dagre": "^2.3.0",
     "cytoscape-popper": "^1.0.7",
     "dagre": "^0.8.5",
     "preact": "^10.3.2",
